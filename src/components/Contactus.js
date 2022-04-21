@@ -21,7 +21,6 @@ import CircularProgress, {
 } from "@mui/material/CircularProgress"
 import CardContent from "@mui/material/CardContent"
 import { MenuItem } from "@material-ui/core"
-import { styled } from "@mui/material/styles"
 let emptyObject = {}
 const steps = ["Project", "Time/Budget", "Submit"]
 
@@ -35,7 +34,7 @@ function FacebookCircularProgress(props) {
           color: theme =>
             theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
         }}
-        size={40}
+        size={100}
         thickness={4}
         {...props}
         value={100}
@@ -53,7 +52,7 @@ function FacebookCircularProgress(props) {
             strokeLinecap: "round",
           },
         }}
-        size={40}
+        size={100}
         thickness={4}
         {...props}
       />
@@ -95,7 +94,6 @@ export default function Contactus() {
       
       Best wishes,`,
     }).then(message => {
-      alert("call")
       setmessageSuccess(message)
       setmessageLoading(false)
     })
@@ -107,7 +105,6 @@ export default function Contactus() {
 
       newSkipped.delete(activeStep)
     }
-    alert(activeStep)
     if (activeStep === 2) {
       sendEmail()
     }
@@ -180,7 +177,9 @@ export default function Contactus() {
                 </Stepper>
                 {activeStep === steps.length ? (
                   messageLoading ? (
-                    <FacebookCircularProgress />
+                    <div className="flex justify-center items-center mt-20">
+                      <FacebookCircularProgress />
+                    </div>
                   ) : (
                     <React.Fragment>
                       {messageSuccess === "OK" ? (
@@ -448,8 +447,9 @@ export default function Contactus() {
                         </Card>
                       </div>
                     )}
-                    <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+                    <Box sx={{ display: "flex", flexDirection: "row", pt: 4 }}>
                       <Button
+                        variant="contained"
                         color="inherit"
                         disabled={activeStep === 0}
                         onClick={handleBack}
@@ -460,6 +460,7 @@ export default function Contactus() {
                       <Box sx={{ flex: "1 1 auto" }} />
                       {isStepOptional(activeStep) && (
                         <Button
+                          variant="contained"
                           color="inherit"
                           onClick={handleSkip}
                           sx={{ mr: 1 }}
@@ -468,7 +469,7 @@ export default function Contactus() {
                         </Button>
                       )}
 
-                      <Button onClick={handleNext}>
+                      <Button variant="contained" onClick={handleNext}>
                         {activeStep === steps.length - 1 ? "Finish" : "Next"}
                       </Button>
                     </Box>

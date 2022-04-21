@@ -12,34 +12,58 @@ export default function Landning() {
         <div className="px-8">
           <p className="text-white text-3xl">I am</p>
           <p className="text-white text-6xl font-semibold pb-3">
-            Muhammad Yasir Ismail
+            <b>Muhammad</b>
           </p>
-          <p className="text-white text-2xl mb-8">
-            Graphics Designer, Web Developer and Motion Graphics Expert
+          <p p className="text-white text-6xl font-semibold pb-3">
+            Yasir Ismail
+          </p>
+          <p className="text-white text-2xl mb-8 p-2">
+            Graphics Designer, Web Developer, Backend Developer and Motion
+            Graphics Expert
           </p>
           <div className="cursor-pointer flex justify-center text-center items-center border w-2/4 rounded-full px-5 py-2 bg-white">
-            <p className="font-semibold text-lg">Explore Portfolio </p>
+            <p className="font-semibold text-lg">
+              <a
+                href="https://github.com/yasirismail009?tab=repositories"
+                target="blank"
+              >
+                Explore Portfolio
+              </a>
+            </p>
           </div>
         </div>
       </div>
       <div className="w-2/4 flex flex-row justify-center items-center -mt-10">
         <div>
-          {" "}
           <img src={Profile} alt="Yasir" style={{ maxWidth: "130%" }} />
         </div>
         <div>
-          <div className="rounded-full bg-white p-4 py-5 h-auto mb-4">
-            <img src={Behance} alt="" width="200" />
-          </div>
-          <div className="rounded-full bg-white p-5  h-auto mb-4">
-            <img src={Viemo} alt="" width="200" />
-          </div>
-          <div className="rounded-full bg-white p-4 py-4 h-auto mb-4">
-            <img src={Lottie} alt="" width="200" />
-          </div>
-          <div className="rounded-full bg-white p-4 py-4 h-auto">
-            <img src={Linkedin} alt="" width="200" />
-          </div>
+          <a href="https://www.behance.net/yasirIsmail_1" target="_blank">
+            <div className="rounded-full bg-white p-4 py-5 h-auto mb-4">
+              <img src={Behance} alt="" width="200" />
+            </div>
+          </a>
+          <a href="https://vimeo.com/ydesigns" target="_blank">
+            <div className="rounded-full bg-white p-5  h-auto mb-4">
+              <img src={Viemo} alt="" width="200" />
+            </div>
+          </a>
+          <a
+            href="https://iconscout.com/contributors/muhammad-yasir-ismail"
+            target="_blank"
+          >
+            <div className="rounded-full bg-white p-4 py-4 h-auto mb-4">
+              <img src={Lottie} alt="" width="200" />
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yasir-ismail-5143b3164/"
+            target="_blank"
+          >
+            <div className="rounded-full bg-white p-4 py-4 h-auto">
+              <img src={Linkedin} alt="" width="200" />
+            </div>
+          </a>
         </div>
       </div>
     </div>

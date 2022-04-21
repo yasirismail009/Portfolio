@@ -35,3 +35,9 @@
 .css-pwngrv-MuiPaper-root-MuiCard-root {
   background-color: black !important;
 }
+.css-cm9jqg-MuiButtonBase-root-MuiButton-root {
+  color: rgb(78, 78, 78) !important;
+}
+.css-1s98lgx-MuiButtonBase-root-MuiButton-root.Mui-disabled {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}

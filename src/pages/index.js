@@ -6,6 +6,7 @@ import Portfolio from "../components/Portfolio"
 import About from "../components/About"
 import Contactus from "../components/Contactus"
 import Helmet from "react-helmet"
+import Footer from "../components/Footer"
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Portfolio />
       <About />
       <Contactus />
+      <Footer />
     </div>
   )
 }
