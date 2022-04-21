@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: white !important;
+}
+.css-1aquho2-MuiTabs-indicator {
+  background-color: white !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  color: rgb(187, 187, 187) !important;
+}
+.css-ghsjzk-MuiInputBase-root-MuiInput-root:after {
+  border-bottom: 2px solid #ebebeb !important;
+}
+.css-a1sg1c-MuiButtonBase-root-MuiButton-root.Mui-disabled {
+  color: #ebebeb !important;
+}
+.MuiOutlinedInput-notchedOutline {
+  border-color: #ebebeb !important;
+}
+.MuiInputLabel-outlined {
+  color: #a8a8a8 !important;
+}
+.MuiSelect-outlined.MuiSelect-outlined {
+  color: white !important;
+}
+.css-1pnmrwp-MuiTypography-root {
+  color: white !important;
+}
+.css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input {
+  color: white !important;
+}
+.css-pwngrv-MuiPaper-root-MuiCard-root {
+  background-color: black !important;
+}

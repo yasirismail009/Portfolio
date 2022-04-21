@@ -7,6 +7,9 @@ import Ai from "../assets/img/Ai.svg"
 import Ae from "../assets/img/Ae.svg"
 import Sc from "../assets/img/sc.svg"
 import Hai from "../assets/img/hai.svg"
+import web from "../assets/img/Web.svg"
+import gra from "../assets/img/Graphics.svg"
+import ani from "../assets/img/Animat.svg"
 
 export const Web = {
   MainTitle: "Web Development",
@@ -56,6 +59,22 @@ export const Motion = {
     {
       title: "Haiku",
       img: Hai,
+    },
+  ],
+}
+export const PortfolioData = {
+  data: [
+    {
+      title: "Website Design",
+      img: web,
+    },
+    {
+      title: "Graphics Designs",
+      img: gra,
+    },
+    {
+      title: "Video Editing",
+      img: ani,
     },
   ],
 }

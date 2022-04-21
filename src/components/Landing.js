@@ -17,7 +17,7 @@ export default function Landning() {
           <p className="text-white text-2xl mb-8">
             Graphics Designer, Web Developer and Motion Graphics Expert
           </p>
-          <div className="cursor-pointer flex justify-center text-center items-center border rounded-full px-5 py-2 bg-white">
+          <div className="cursor-pointer flex justify-center text-center items-center border w-2/4 rounded-full px-5 py-2 bg-white">
             <p className="font-semibold text-lg">Explore Portfolio </p>
           </div>
         </div>

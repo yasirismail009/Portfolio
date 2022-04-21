@@ -10,10 +10,10 @@ export default function SkillsCard({ data }) {
         {data.data.map((val, key) => (
           <div
             key={key}
-            className="w-1/4 flex flex-col justify-center items-center"
+            className="w-1/4 p-6 rounded flex flex-col justify-center items-center  hover:bg-black active:bg-gray-700 focus:outline-none focus:ring focus:ring-violet-300"
           >
             <img src={val.img} alt="skills" style={{ height: "70px" }} />
-            <p className="text-white text-xl font-semibold py-2">{val.title}</p>
+            <p className="text-white text-xl font-semibold">{val.title}</p>
           </div>
         ))}
       </div>
